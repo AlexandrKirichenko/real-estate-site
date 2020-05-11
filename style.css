@@ -18,3 +18,67 @@ html{
 .menu{
     border-top: 2px solid 
 }
+
+.menu__list{
+    display: flex;
+    justify-content: center;
+}
+
+.menu__list-item{
+    width: 300px;
+}
+
+.menu__list-link{
+    font-size: 24px;
+    line-height: 28px;
+    color: #888;
+    text-decoration: none;
+    display: block;
+    padding: 34px 10px 38px;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    transition: all .3s;
+}
+
+
+
+.menu__list-link--active,
+.menu__list-link:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.menu__list-item:first-child{
+    border-left: 1px solid #c4c4c4;
+}
+
+.menu__list-item:last-child{
+    border-right: 1px solid #c4c4c4;
+}
+
+.slider__item{
+    /* background-image: url(../images/slider-item.jpg); */
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; /*чтобы картинка правильно сама сжималась*/
+}
+
+.slick-arrow{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 5; /*чтобы если стрелка прячется она оказывалась поверх, в слое*/
+    cursor: pointer;
+    transform: translateY(-50%) /*чтобы наша стрелка поднялась чуть выше, т.к. топ 50% считается от верхней границы*/
+}
+
+.slick-next{
+    right: 20px
+}
+
+.slick-prev{
+    left: 20px;
+}
